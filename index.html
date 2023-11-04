@@ -7,6 +7,7 @@
     <title>Startseite</title>
     <link rel="stylesheet" href="nicepage.css" media="screen">
 <link rel="stylesheet" href="Startseite.css" media="screen">
+<link rel="stylesheet" href="Bewerbung.css" media="screen">
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
     <meta name="generator" content="Nicepage 5.21.3, nicepage.com">
@@ -249,36 +250,63 @@
         </div>
       </div>
     </section>
-    <section class="u-align-center u-clearfix u-gradient u-section-7" id="sec-3148">
-      <div class="u-clearfix u-sheet u-sheet-1">
-        <h1 class="u-text u-text-default u-text-white u-text-1">Bewirb dich Jetzt</h1>
-        <div class="u-border-3 u-border-custom-color-1 u-line u-line-horizontal u-line-1"></div>
-        <img class="u-image u-image-default u-image-1" src="images/BBA_Gold_PSD_2_High_Res.-removebg-preview.png" alt="" data-image-width="612" data-image-height="407">
-        <div class="u-expanded-width-sm u-expanded-width-xs u-form u-form-1">
-          <form action="https://forms.nicepagesrv.com/v2/form/process" class="u-clearfix u-form-spacing-20 u-form-vertical u-inner-form" style="padding: 10px" source="email" name="form">
-            <div class="u-form-group u-form-name u-label-none">
-              <label for="name-3b9a" class="u-label">Name</label>
-              <input type="text" placeholder="Gib deinen Namen ein" id="name-3b9a" name="name" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-input-1" required="">
-            </div>
-            <div class="u-form-email u-form-group u-label-none">
-              <label for="email-3b9a" class="u-label">Email</label>
-              <input type="email" placeholder="Gib deine EMail Addresse ein" id="email-3b9a" name="email" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-input-2" required="">
-            </div>
-            <div class="u-form-group u-form-message u-label-none">
-              <label for="message-3b9a" class="u-label">Message</label>
-              <textarea placeholder="Instagram-Name &amp; Zusätzliche Informationen" rows="4" cols="50" id="message-3b9a" name="message" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-input-3" required=""></textarea>
-            </div>
-            <div class="u-align-center u-form-group u-form-submit">
-              <a href="#" class="u-border-2 u-border-black u-btn u-btn-rectangle u-btn-submit u-button-style u-none u-btn-1">Abschicken</a>
-              <input type="submit" value="submit" class="u-form-control-hidden">
-            </div>
-            <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
-            <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
-            <input type="hidden" value="" name="recaptchaResponse">
-            <input type="hidden" name="formServices" value="85f95e52-5126-2c7e-facc-4f2603440131">
-          </form>
-        </div>
-      </div>
+    <section class=" u-clearfix u-gradient u-section-1 abstand" id="sec-30db">
+      <img class="inline"  src="images/BBA_Gold_PSD_2_High_Res.-removebg-preview.png" alt="" data-image-width="612" data-image-height="407">
+      <div class="container">
+        <h2>Kontaktieren Sie uns</h2>
+      
+        <form
+  id="form-contact">
+
+<label for="subject">Name:</label>
+<input type="subject" id="subject" name="subject" required>
+<label for="text">Insta-Name:</label>
+<input type="text" id="text" name="text" required>
+<label for="email">E-Mail:</label>
+<input type="email" id="email" name="email" required>
+<label for="message">Nachricht:</label>
+<textarea id="message" name="message" rows="4" required></textarea>
+
+<button type="button"
+onclick="submitForm()">Kommentar
+absenden</button>
+</form>
+    </div>
+
+
+    <script>
+      function submitForm() {
+
+const uploadForm = document.getElementById('form-contact');
+const formData = new FormData(uploadForm);
+
+
+
+
+fetch('https://formbold.com/s/oaEm4', {
+  method: 'POST',
+  body: formData
+})
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Fehler bei der Serveranfrage');
+    }
+    return response.text();
+  })
+  .then(data => {
+    document.getElementById('email').value =""
+    document.getElementById('message').value =""
+    document.getElementByID('subject').value =""
+    document.getElementByID('text').value =""
+   // window.location.href = "/Bewerbung.html";
+   
+
+  
+  });
+}
+
+    </script>
+   
     </section>
     <section class="u-align-center u-clearfix u-white u-section-8" id="sec-5fd6">
       <div class="u-clearfix u-sheet u-sheet-1">
