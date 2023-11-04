@@ -44,9 +44,13 @@ button {
 button:hover {
   background-color: #999;
 }
-.u-section-1 {
+ .u-section-1 {
+  background-image: url("images/BackgroundMainPage.png");
+}
+.u-section-11 {
   background-image: linear-gradient(black, #404040);
 }
+
 .u-section-1 .u-sheet-1 {
   min-height: 791px;
 }
