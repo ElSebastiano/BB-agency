@@ -133,6 +133,31 @@ button:hover {
 }
 
 @media (max-width: 991px) {
+  
+  #sec-3148
+{text-align: center;
+}
+  body {
+    overflow-x: hidden;
+   max-width: 100%;
+  }
+
+  .inline{
+    margin: 0;
+    float: none;
+      width: 20em; 
+  }
+
+  .container {
+    margin: 0 auto;
+    max-width: 400px;
+   
+    padding: 20px;
+    
+   color: #fff;
+    border-radius: 5px;
+  }
+
   .u-section-1 .u-sheet-1 {
     min-height: 808px;
   }
@@ -171,6 +196,32 @@ button:hover {
     min-height: 865px;
   }
 
+
+
+#sec-3148
+{text-align: center;
+}
+  body {
+    overflow-x: hidden;
+   max-width: 100%;
+  }
+
+  .inline{
+    margin: 0;
+    float: none;
+      width: 20em; 
+  }
+
+  .container {
+    margin: 0 auto;
+    max-width: 400px;
+   
+    padding: 20px;
+    
+   color: #fff;
+    border-radius: 5px;
+  }
+
   .u-section-1 .u-image-1 {
     margin-top: 154px;
   }
@@ -200,6 +251,29 @@ button:hover {
 }
 
 @media (max-width: 575px) {
+  #sec-3148
+{text-align: center;
+}
+  body {
+    overflow-x: hidden;
+   max-width: 100%;
+  }
+
+  .inline{
+    margin: 0;
+    float: none;
+      width: 20em; 
+  }
+
+  .container {
+    margin: 0 auto;
+    max-width: 400px;
+   
+    padding: 20px;
+    
+   color: #fff;
+    border-radius: 5px;
+  }
   .u-section-1 .u-sheet-1 {
     min-height: 851px;
   }
@@ -414,6 +488,7 @@ button:hover {
 }
 
 @media (max-width: 767px) {
+  
   .u-section-2 .u-sheet-1 {
     min-height: 1227px;
   }

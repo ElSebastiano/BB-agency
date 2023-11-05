@@ -6,6 +6,12 @@
 .abstand {
   margin-top: 50px;
 }
+.abstand2 {
+  margin-top: 10px;
+}
+.abstand3 {
+  margin-bottom: 50px;
+}
 .fr-clearfix::after {
   clear: both;
   display: block;
@@ -2686,6 +2692,13 @@ a {
   margin-right: 0 !important;
 }
 @media (max-width: 767px) {
+  .abstand2 {
+    margin-top: 150px;
+  }
+  .abstand3 {
+    margin-bottom: 150px;
+  }
+  
   .u-form-horizontal {
     flex-direction: column;
     align-items: stretch;
@@ -29009,7 +29022,9 @@ li.active > a.u-button-style.u-button-style.u-active-palette-2-base,
 li.active > a.u-button-style.u-button-style.u-active-palette-2-base[class*="u-border-"],
 input.u-field-input.u-field-input.u-active-palette-2-base:checked {
   color: #ffffff !important;
-  background-color: #db545a !important;
+  cursor: pointer; 
+  background-color: #000 !important;
+  border-radius: 12px;  
 }
 a.u-link.u-hover-palette-2-base:hover {
   color: #db545a !important;
@@ -42610,14 +42625,14 @@ a.u-link.u-text-hover-grey-90:hover {
         .u-image:not(.u-shading) > .u-container-layout > a,
         a
         {
-        color: #478ac9;
+        color: #000;
         }
         .u-overlap.u-overlap-transparent:not(.u-overlap-contrast) .u-header :not(.u-nav-item) > a:hover,
         .u-gradient > .u-container-layout > a:hover,
         .u-image:not(.u-shading) > .u-container-layout > a:hover,
         a:hover
         {
-        color: #387cbd;
+        color: #daa520;
         }
         .u-overlap.u-overlap-transparent:not(.u-overlap-contrast) .u-header :not(.u-nav-item) > .u-btn,
         .u-gradient > .u-container-layout > .u-btn,
@@ -42822,6 +42837,11 @@ a.u-link.u-text-hover-grey-90:hover {
 .u-footer .u-text-3 {
   font-weight: 700;
   margin: -7px 702px 0 21px;
+}
+
+.u-text-4 {
+  font-weight: 400;
+  margin: -42px 310px 0 463px;
 }
 
 .u-footer .u-line-1 {
