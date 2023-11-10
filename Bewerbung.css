@@ -131,9 +131,51 @@ button:hover {
   .u-section-1 .u-line-1 {
     margin-left: 293px;
   }
+  body {
+    overflow-x: hidden;
+   max-width: 100%;
+  }
+
+  .inline{
+    margin-top: 200px;
+    float: none;
+    width: 100%;
+    position: absolute;
+  }
+
+  .container {
+    margin: 100px auto;
+    max-width: 400px;
+   
+    padding: 20px;
+    
+   color: #fff;
+    border-radius: 5px;
+  }
 }
 
 @media (max-width: 767px) {
+  body {
+    overflow-x: hidden;
+   max-width: 100%;
+  }
+
+  .inline{
+    margin-top: 200px;
+    float: none;
+      width: 100%;
+      position: absolute;
+  }
+
+  .container {
+    margin: 100px auto;
+    max-width: 400px;
+   
+    padding: 20px;
+    
+   color: #fff;
+    border-radius: 5px;
+  }
   .u-section-1 .u-line-1 {
     margin-left: 113px;
   }
@@ -144,6 +186,27 @@ button:hover {
 }
 
 @media (max-width: 575px) {
+  body {
+    overflow-x: hidden;
+   max-width: 100%;
+  }
+
+  .inline{
+    margin-top: 200px;
+    float: none;
+    width: 100%;
+    position: absolute;
+  }
+
+  .container {
+    margin: 100px auto;
+    max-width: 400px;
+   
+    padding: 20px;
+    
+   color: #fff;
+    border-radius: 5px;
+  }
   .u-section-1 .u-line-1 {
     width: 340px;
     margin-left: 0;
